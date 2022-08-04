@@ -3,7 +3,7 @@
 Install rsgislib in conda Linux (Manjaro Ruah 21.3.6):
 ```
 conda activate
-conda install -c conda-forge rsgislib
+conda create -n rsgislib -c conda-forge rsgislib
 conda deactivate
 conda activate rsgislib 
 conda install matplotlip
