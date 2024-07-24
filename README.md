@@ -1,6 +1,6 @@
 # PDI-segmentation-rsgislib
 
-Install rsgislib in conda (Linux):
+Install rsgislib in conda:
 ```
 conda activate
 
