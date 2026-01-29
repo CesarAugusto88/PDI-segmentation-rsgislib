@@ -4,13 +4,16 @@ Install rsgislib in conda:
 ```
 conda activate
 
-conda create -n rsgislib -c conda-forge rsgislib python=3.10
+conda create -n rsgislib -c conda-forge python=3.10 \
+rsgislib gdal rasterio fiona geopandas shapely rtree rasterstats \
+h5py scikit-learn scikit-image scikit-optimize imbalanced-learn \
+matplotlib pandas statsmodels scipy networkx sqlalchemy pycurl \
+xgboost lightgbm tpot seaborn numba pip sphinx elevation tqdm \
+jinja2 keras keras-preprocessing pytables bokeh pygal jupyterlab \
+psutil pysal libpysal esda pyyaml netcdf4 xarray plotly \
+python-kaleido psycopg2 ipywidgets tuiview jupyter --strict-channel-priority
 
-conda deactivate
-
-conda activate rsgislib 
-
-conda install -c conda-forge rsgislib gdal h5py parallel scikit-learn scikit-image scikit-optimize imbalanced-learn matplotlib pandas geopandas statsmodels scipy rasterio shapely networkx sqlalchemy pycurl xgboost lightgbm tpot seaborn numba pip sphinx elevation rtree tqdm jinja2 keras keras-preprocessing pytables bokeh pygal jupyterlab psutil pysal libpysal esda pyyaml netcdf4 xarray rasterstats fiona plotly python-kaleido psycopg2 ipywidgets tuiview jupyter
+conda activate rsgislib
 
 jupyter notebook
 ``` 
